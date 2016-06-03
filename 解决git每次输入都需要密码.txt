@@ -1,0 +1,7 @@
+在使用 Git 的时候，经常会遇到需要频繁输入密码的情况，在每次 commit 的时候都要求输入你的用户名和密码，如果提交频繁的话甚是不便。
+
+GNU Linux 用户可以使用 ‘cache’ 认证助手包来缓存认证信息，运行下面的命令来启用凭据缓存，启用后每次输入密码将保存一小时（3600秒）
+git config --global  credential.helper  'cache --timeout 3600'
+
+查看 ‘cache’ 认证助手的所有配置:
+git helpcredential-cache
